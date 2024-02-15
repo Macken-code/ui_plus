@@ -35,7 +35,6 @@ const CustomSelect = ({label, name, options, register, errors}) => {
                             <MenuItem value={option.key} key={option.key}>{option.value}</MenuItem>
                         )
                     })}
-                    
                 </Select>
                 <FormHelperText>{errors[name] && errors[name].message}</FormHelperText>
             </FormControl>
