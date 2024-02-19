@@ -1,13 +1,12 @@
 
 import './App.css'
-import Dashboard from './components/Dashboard';
+import FormExample from './components/form/FormExample'
 
 function App() {
 
   return (
     <>
-      {/* <FormExample/> */}
-      <Dashboard />
+      <FormExample/>
     </>
   )
 }
