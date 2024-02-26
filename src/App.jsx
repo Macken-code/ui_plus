@@ -1,13 +1,14 @@
 
 import './App.css'
-import Dashboard from './components/Dashboard';
+import AppBarMac from './components/core/AppBarMac'
+import BodyMac from './components/core/BodyMac'
 
 function App() {
 
   return (
     <>
-      {/* <FormExample/> */}
-      <Dashboard />
+      <AppBarMac/>
+      <BodyMac />
     </>
   )
 }

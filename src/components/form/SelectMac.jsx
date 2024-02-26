@@ -6,7 +6,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-const ControlSelect = ({ label, name, options, control, errors }) => {
+const SelectMac = ({ label, name, options, control, errors }) => {
   return (
     <div>
         <FormControl sx={{ m: 1, minWidth: 120 }} error={!!errors[name]}>
@@ -41,4 +41,4 @@ const ControlSelect = ({ label, name, options, control, errors }) => {
   )
 }
 
-export default ControlSelect
+export default SelectMac

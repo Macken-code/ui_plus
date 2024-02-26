@@ -1,18 +1,22 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 
-const Input = ({label, name, register, errors}) => {
+const TextfieldMac = ({label, size, name, register, errors,...rest}) => {
   return (
-    <div>
-        <TextField
+      <>
+      <TextField
           {...register(name)}
+          {...rest}
           error ={errors[name] ? true : false}
           id= {name}
           label={label}
+          size={size}
+          color='secondary'
+          variant='filled'
           helperText={errors[name] ? errors[name].message : ''}
         />
-    </div>
+      </>
   )
 }
 
-export default Input
+export default TextfieldMac
